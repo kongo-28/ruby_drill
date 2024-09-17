@@ -6,7 +6,7 @@ def binary_search(num, array)
   high = array.length
   low = 0
   
-  while high > low
+  while high >= low
     puts "high:#{high}"
     puts "low:#{low}"
     center = (high + low) / 2
@@ -25,6 +25,7 @@ end
 
 
 array=[1,3,5,6,9,10,13,20,26,31]
+
 puts "検索したい数字を入力してください"
 num = gets.to_i
 binary_search(num, array)
